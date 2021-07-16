@@ -10024,6 +10024,10 @@ gmock/gmock.h
 portfolio.h
 /Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.h
 
+/Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.cpp
+portfolio.h
+/Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.h
+
 /Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.h
 string
 -
@@ -10033,6 +10037,10 @@ unordered_map
 -
 vector
 -
+purchaseRecord.h
+/Users/e823551/Documents/TDDCPP/src/c6/1/purchaseRecord.h
+
+/Users/e823551/Documents/TDDCPP/src/c6/1/purchaseRecord.h
 boost/date_time.hpp
 /Users/e823551/Documents/TDDCPP/src/c6/1/boost/date_time.hpp
 

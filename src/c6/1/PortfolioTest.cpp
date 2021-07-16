@@ -21,11 +21,34 @@ public:
     {
         m_portfolio.Purchase(symbol, shareCount,  transactionsDate);
     };
+
+    void Sell(
+        const std::string& symbol,
+        unsigned int shareCount,
+        const date& transactionsDate = ArbitraryDate
+    )
+    {
+        m_portfolio.Sell(symbol, shareCount,  transactionsDate);
+    };
+
+    void ASSERT_PURCHASE(
+        PurchaseRecord& purchase, int shareCount, const date& date
+    )
+    {
+        ASSERT_EQ(shareCount, purchase.ShareCount);
+        ASSERT_EQ(date, purchase.Date);
+    }
 };
 
 const date APortfolio::ArbitraryDate(2021, Jul, 15);
 const std::string APortfolio::IBM = "IBM";
 const std::string APortfolio::SAMSUNG = "SAMSUNG";
+
+bool operator==(const PurchaseRecord& lhs, const PurchaseRecord& rhs)
+{
+    return lhs.ShareCount == rhs.ShareCount && lhs.Date == rhs.Date;
+}
+
 
 TEST_F(APortfolio, IsEmptyWhenCreated)
 {
@@ -52,7 +75,12 @@ TEST_F(APortfolio, AnswersShareCountForPurchasedSymbol)
 
 TEST_F(APortfolio, ThrowOnPurchaseOfZeroShares)
 {
-    ASSERT_THROW(m_portfolio.Purchase(IBM, 0), InvalidPurchaseException);
+    ASSERT_THROW(Purchase(IBM, 0), ShareCountCannotBeZeroException);
+}
+
+TEST_F(APortfolio, ThrowOnSellOfZeroShares)
+{
+    ASSERT_THROW(Sell(IBM, 0), ShareCountCannotBeZeroException);
 }
 
 TEST_F(APortfolio, AnswersShareCountForAppropriateSymbol)
@@ -78,7 +106,7 @@ TEST_F(APortfolio, ReducesShareCountOfSymbolOnSell)
 
 TEST_F(APortfolio, ThrowsWhenSellingMoreSharesThanPurchased)
 {
-    ASSERT_THROW(m_portfolio.Sell(SAMSUNG, 1), InvalidSellException);
+    ASSERT_THROW(Sell(SAMSUNG, 1), InsufficientSharesException);
 }
 
 
@@ -88,7 +116,29 @@ TEST_F(APortfolio, AnswersThePurchaseRecoredForASinglePurchase)
     Purchase(SAMSUNG, 5, dateOfPurchase);
     auto purchases = m_portfolio.Purchases(SAMSUNG);
 
-    auto purchase = purchases[0];
-    ASSERT_THAT(purchase.ShareCount, Eq(5u));
-    ASSERT_THAT(purchase.Date, Eq(dateOfPurchase));
+    ASSERT_THAT(purchases[0].ShareCount, Eq(5u));
+    ASSERT_THAT(purchases[0].Date, Eq(dateOfPurchase));
+}
+
+TEST_F(APortfolio, IncludesSalesInPurchasedRecords)
+{
+    Purchase(SAMSUNG, 10);
+    Sell(SAMSUNG, 5, ArbitraryDate);
+
+    auto sales = m_portfolio.Purchases(SAMSUNG);
+    ASSERT_PURCHASE(sales[1], -5, ArbitraryDate);
+}
+
+TEST_F(APortfolio, SeparatesPurchasesBySymbol)
+{
+    Purchase(SAMSUNG, 5, ArbitraryDate);
+    Purchase(IBM, 1, ArbitraryDate);
+
+    auto sales = m_portfolio.Purchases(SAMSUNG);
+    ASSERT_THAT(sales, ElementsAre(PurchaseRecord{5, ArbitraryDate}));
+}
+
+TEST_F(APortfolio, AnswersEmptyPurchaseRecordVectorWhenSymbolNotFound)
+{
+    ASSERT_THAT(m_portfolio.Purchases(SAMSUNG), Eq(std::vector<PurchaseRecord>{}));
 }

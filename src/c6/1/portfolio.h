@@ -5,39 +5,51 @@
 #include <exception>
 #include <unordered_map>
 #include <vector>
-#include "boost/date_time.hpp"
+#include "purchaseRecord.h"
 
-class InvalidPurchaseException : public std::exception
+class ShareCountCannotBeZeroException : public std::exception
 {};
 
-class InvalidSellException : public std::exception
+class InsufficientSharesException : public std::exception
 {};
 
-struct PurchaseRecord
-{
-    PurchaseRecord(unsigned int shareCount, const boost::gregorian::date& date)
-        : ShareCount(shareCount), Date(date)
-    { }
-
-    unsigned int ShareCount;
-    boost::gregorian::date Date;
-    
-};
 
 class Portfolio 
 {
 public:
     static const boost::gregorian::date FIXED_PURCHASE_DATE;
-    Portfolio();
+
     bool IsEmpty() const;
     void Purchase(const std::string& symbol, unsigned int shareCount, 
         const boost::gregorian::date& transactionDate=FIXED_PURCHASE_DATE);
-    void Sell(const std::string& symbol, unsigned int shareCount);
+    void Sell(const std::string& symbol, unsigned int shareCount, 
+        const boost::gregorian::date& transactionDate=FIXED_PURCHASE_DATE);
+
+
     unsigned int ShareCount(const std::string& symbol) const;
     std::vector<PurchaseRecord> Purchases(const std::string& symbol) const;
+
+private:
+    void Transact(const std::string& symbol, int shareChange, 
+        const boost::gregorian::date& transactionDate);
+    void ThrowIfShareCountIsZero(int shareChange) const ;
+    void UpdateShareCount(const std::string& symbol, int shareChange);
+    void AddPurchaseRecord(const std::string& symbol, int shareChange, const boost::gregorian::date& date);
+
+    bool ContainsSymbol(const std::string& symbol) const;
+    void InitializePurchaseRecords(const std::string& symbol);
+    void Add(const std::string& symbol, PurchaseRecord&& record);
+
+    template<typename T>
+    T Find(std::unordered_map<std::string, T> map, const std::string& key) const
+    {
+        auto it = map.find(key);
+        return it == map.end() ? T{} : it->second;
+    }    
+
 private:
     std::unordered_map<std::string, unsigned int> m_holdings;
-    std::vector<PurchaseRecord> m_purchases;
+    std::unordered_map<std::string, std::vector<PurchaseRecord>> m_purchasesRecords;
 };
 
 
