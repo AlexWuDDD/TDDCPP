@@ -5,7 +5,7 @@
 #include <exception>
 #include <unordered_map>
 #include <vector>
-#include "purchaseRecord.h"
+#include "holding.h"
 
 class ShareCountCannotBeZeroException : public std::exception
 {};
@@ -33,7 +33,6 @@ private:
     void Transact(const std::string& symbol, int shareChange, 
         const boost::gregorian::date& transactionDate);
     void ThrowIfShareCountIsZero(int shareChange) const ;
-    void UpdateShareCount(const std::string& symbol, int shareChange);
     void AddPurchaseRecord(const std::string& symbol, int shareChange, const boost::gregorian::date& date);
 
     bool ContainsSymbol(const std::string& symbol) const;
@@ -48,8 +47,10 @@ private:
     }    
 
 private:
-    std::unordered_map<std::string, unsigned int> m_holdings;
-    std::unordered_map<std::string, std::vector<PurchaseRecord>> m_purchasesRecords;
+    // std::unordered_map<std::string, unsigned int> m_holdings;
+    // std::unordered_map<std::string, std::vector<PurchaseRecord>> m_purchasesRecords;
+    // std::unordered_map<std::string, std::vector<PurchaseRecord>> m_purchasesRecords;
+    std::unordered_map<std::string, Holding> m_holdings;
 };
 
 

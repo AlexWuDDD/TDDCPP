@@ -900,6 +900,7 @@ CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o
  ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-string.h
  ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-type-util.h
  /Users/e823551/Documents/TDDCPP/src/c6/1/PortfolioTest.cpp
+ /Users/e823551/Documents/TDDCPP/src/c6/1/holding.h
  /Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.h
  /Users/e823551/Documents/TDDCPP/src/c6/1/purchaseRecord.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/main.cpp.o
@@ -1787,6 +1788,7 @@ CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o
  ../boost_1_76_0/boost/winapi/detail/footer.hpp
  ../boost_1_76_0/boost/winapi/detail/header.hpp
  ../boost_1_76_0/boost/winapi/time.hpp
+ /Users/e823551/Documents/TDDCPP/src/c6/1/holding.h
  /Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.cpp
  /Users/e823551/Documents/TDDCPP/src/c6/1/portfolio.h
  /Users/e823551/Documents/TDDCPP/src/c6/1/purchaseRecord.h

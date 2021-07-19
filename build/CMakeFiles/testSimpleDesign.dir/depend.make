@@ -899,6 +899,7 @@ CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../googletest-rele
 CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../src/c6/1/PortfolioTest.cpp
+CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../src/c6/1/holding.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../src/c6/1/portfolio.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/PortfolioTest.cpp.o: ../src/c6/1/purchaseRecord.h
 
@@ -1786,6 +1787,7 @@ CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../boost_1_76_0/boost/
 CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../boost_1_76_0/boost/winapi/detail/footer.hpp
 CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../boost_1_76_0/boost/winapi/detail/header.hpp
 CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../boost_1_76_0/boost/winapi/time.hpp
+CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../src/c6/1/holding.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../src/c6/1/portfolio.cpp
 CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../src/c6/1/portfolio.h
 CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.o: ../src/c6/1/purchaseRecord.h

@@ -25,12 +25,12 @@ void Portfolio::Sell(const std::string &symbol, unsigned int shareCount,
 
 unsigned int Portfolio::ShareCount(const string& symbol) const
 {
-    return Find<unsigned int>(m_holdings, symbol);
+    return Find<Holding>(m_holdings, symbol).ShareCount();
 }
 
 std::vector<PurchaseRecord> Portfolio::Purchases(const std::string& symbol) const
 {
-    return Find<std::vector<PurchaseRecord>>(m_purchasesRecords, symbol);
+    return Find<Holding>(m_holdings, symbol).Purchases();
 }
 
 
@@ -38,18 +38,12 @@ void Portfolio::Transact(const std::string& symbol, int shareChange,
         const boost::gregorian::date& transactionDate)
 {
     ThrowIfShareCountIsZero(shareChange);
-    UpdateShareCount(symbol, shareChange);
     AddPurchaseRecord(symbol, shareChange, transactionDate);
 }
 
 void Portfolio::ThrowIfShareCountIsZero(int shareChange) const
 {
     if(0 == shareChange) throw ShareCountCannotBeZeroException();
-}
-
-void Portfolio::UpdateShareCount(const std::string& symbol, int shareChange)
-{
-    m_holdings[symbol] = ShareCount(symbol) + shareChange;
 }
 
 void Portfolio::AddPurchaseRecord(const std::string& symbol, int shareChange, const boost::gregorian::date& date)
@@ -61,12 +55,15 @@ void Portfolio::AddPurchaseRecord(const std::string& symbol, int shareChange, co
 }
 
 void Portfolio::InitializePurchaseRecords(const string& symbol) {
-   m_purchasesRecords[symbol] = vector<PurchaseRecord>();
+//    m_purchasesRecords[symbol] = vector<PurchaseRecord>();
+   m_holdings[symbol] = Holding();
 }
+
 void Portfolio::Add(const string& symbol, PurchaseRecord&& record) {
-   m_purchasesRecords[symbol].push_back(record);
+//    m_purchasesRecords[symbol].push_back(record);
+   m_holdings[symbol].Add(record);
 }
 
 bool Portfolio::ContainsSymbol(const string& symbol) const {
-   return m_purchasesRecords.find(symbol) != m_purchasesRecords.end();
+   return m_holdings.find(symbol) != m_holdings.end();
 }
