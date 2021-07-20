@@ -8,11 +8,17 @@ set(GTEST_INC_DIR ${PROJECT_SOURCE_DIR}/googletest-release-1.11.0/googletest/inc
 set(GMOCK_INC_DIR ${PROJECT_SOURCE_DIR}/googletest-release-1.11.0/googlemock/include)
 set(JSONCPP_INC_DIR ${PROJECT_SOURCE_DIR}/jsoncpp-1.9.4/include)
 set(CURL_INC_DIR ${PROJECT_SOURCE_DIR}/curl-7.77.0/inclide)
-SET(BOOST_INC_DIR ${PROJECT_SOURCE_DIR}/boost_1_76_0)
+set(BOOST_INC_DIR ${PROJECT_SOURCE_DIR}/boost_1_76_0)
+set(RLOG_INC_DIR ${PROJECT_SOURCE_DIR}/rlog-1.4/rlog)
+set(CPPUTEST_INC_DIR ${PROJECT_SOURCE_DIR}/cpputest-3.8/include)
 
 set(GTESTGMOCK_LIB_DIR ${PROJECT_SOURCE_DIR}/googletest-release-1.11.0/build/lib)
 set(JSONCPP_LIB_DIR ${PROJECT_SOURCE_DIR}/jsoncpp-1.9.4/build/lib)
 set(CURL_LIB_DIR ${PROJECT_SOURCE_DIR}/curl-7.77.0/lib/.libs)
+set(RLOG_LIB_DIR ${PROJECT_SOURCE_DIR}/rlog-1.4/rlog/.libs)
+set(CPPUTEST_LIB_DIR ${PROJECT_SOURCE_DIR}/cpputest-3.8/build/src/CppUTest)
+set(CPPUTESTEXT_LIB_DIR ${PROJECT_SOURCE_DIR}/cpputest-3.8/build/src/CppUTestExt)
+
 
 include_directories(
     ${GTEST_INC_DIR} 
@@ -20,11 +26,16 @@ include_directories(
     ${JSONCPP_INC_DIR}
     ${CURL_INC_DIR}
     ${BOOST_INC_DIR}
+    ${RLOG_INC_DIR}
+    ${CPPUTEST_INC_DIR}
 )
 link_directories(
     ${GTESTGMOCK_LIB_DIR} 
     ${JSONCPP_LIB_DIR}
-    $(CURL_LIB_DIR)
+    ${CURL_LIB_DIR}
+    ${RLOG_LIB_DIR}
+    ${CPPUTEST_LIB_DIR}
+    ${CPPUTESTEXT_LIB_DIR}
 )
 
 add_executable(testMain 
@@ -82,3 +93,7 @@ add_executable(testSimpleDesign
     src/c6/1/portfolio.cpp
 )
 target_link_libraries(testSimpleDesign gmock_main gmock gtest_main gtest pthread)
+
+add_executable(testFileRead 
+    src/c7/wav/testFileRead.cpp
+)

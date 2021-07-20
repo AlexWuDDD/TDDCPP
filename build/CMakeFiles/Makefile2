@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /Users/e823551/Documents/TDDCPP/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/testFileRead.dir/all
 all: CMakeFiles/testSimpleDesign.dir/all
 all: CMakeFiles/testMock.dir/all
 all: CMakeFiles/testMock3.dir/all
@@ -88,6 +89,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/testFileRead.dir/clean
 clean: CMakeFiles/testSimpleDesign.dir/clean
 clean: CMakeFiles/testMock.dir/clean
 clean: CMakeFiles/testMock3.dir/clean
@@ -99,13 +101,40 @@ clean: CMakeFiles/testMain.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/testFileRead.dir
+
+# All Build rule for target.
+CMakeFiles/testFileRead.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=6,7 "Built target testFileRead"
+.PHONY : CMakeFiles/testFileRead.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testFileRead.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testFileRead.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
+.PHONY : CMakeFiles/testFileRead.dir/rule
+
+# Convenience name for target.
+testFileRead: CMakeFiles/testFileRead.dir/rule
+
+.PHONY : testFileRead
+
+# clean rule for target.
+CMakeFiles/testFileRead.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/clean
+.PHONY : CMakeFiles/testFileRead.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/testSimpleDesign.dir
 
 # All Build rule for target.
 CMakeFiles/testSimpleDesign.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testSimpleDesign.dir/build.make CMakeFiles/testSimpleDesign.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testSimpleDesign.dir/build.make CMakeFiles/testSimpleDesign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=33,34,35,36 "Built target testSimpleDesign"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=35,36,37,38 "Built target testSimpleDesign"
 .PHONY : CMakeFiles/testSimpleDesign.dir/all
 
 # Build rule for subdir invocation for target.
@@ -132,7 +161,7 @@ CMakeFiles/testSimpleDesign.dir/clean:
 CMakeFiles/testMock.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock.dir/build.make CMakeFiles/testMock.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock.dir/build.make CMakeFiles/testMock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=18,19,20,21,22 "Built target testMock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=20,21,22,23,24 "Built target testMock"
 .PHONY : CMakeFiles/testMock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -159,7 +188,7 @@ CMakeFiles/testMock.dir/clean:
 CMakeFiles/testMock3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=26,27,28,29,30,31,32 "Built target testMock3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=28,29,30,31,32,33,34 "Built target testMock3"
 .PHONY : CMakeFiles/testMock3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,7 +242,7 @@ CMakeFiles/testDouble.dir/clean:
 CMakeFiles/testMain2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMain2.dir/build.make CMakeFiles/testMain2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMain2.dir/build.make CMakeFiles/testMain2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target testMain2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=14,15,16,17,18,19 "Built target testMain2"
 .PHONY : CMakeFiles/testMain2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -240,7 +269,7 @@ CMakeFiles/testMain2.dir/clean:
 CMakeFiles/testMock2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock2.dir/build.make CMakeFiles/testMock2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock2.dir/build.make CMakeFiles/testMock2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=23,24,25 "Built target testMock2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=25,26,27 "Built target testMock2"
 .PHONY : CMakeFiles/testMock2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -267,7 +296,7 @@ CMakeFiles/testMock2.dir/clean:
 CMakeFiles/testMain.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMain.dir/build.make CMakeFiles/testMain.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMain.dir/build.make CMakeFiles/testMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target testMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target testMain"
 .PHONY : CMakeFiles/testMain.dir/all
 
 # Build rule for subdir invocation for target.

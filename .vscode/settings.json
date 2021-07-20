@@ -73,6 +73,7 @@
         "utility": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "clocale": "cpp"
+        "clocale": "cpp",
+        "filesystem": "cpp"
     }
 }

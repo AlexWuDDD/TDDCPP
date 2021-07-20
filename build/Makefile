@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named testFileRead
+
+# Build rule for target.
+testFileRead: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testFileRead
+.PHONY : testFileRead
+
+# fast build rule for target.
+testFileRead/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/build
+.PHONY : testFileRead/fast
+
+#=============================================================================
 # Target rules for targets named testSimpleDesign
 
 # Build rule for target.
@@ -949,6 +962,33 @@ src/c6/1/portfolio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testSimpleDesign.dir/build.make CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.s
 .PHONY : src/c6/1/portfolio.cpp.s
 
+src/c7/wav/testFileRead.o: src/c7/wav/testFileRead.cpp.o
+
+.PHONY : src/c7/wav/testFileRead.o
+
+# target to build an object file
+src/c7/wav/testFileRead.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/src/c7/wav/testFileRead.cpp.o
+.PHONY : src/c7/wav/testFileRead.cpp.o
+
+src/c7/wav/testFileRead.i: src/c7/wav/testFileRead.cpp.i
+
+.PHONY : src/c7/wav/testFileRead.i
+
+# target to preprocess a source file
+src/c7/wav/testFileRead.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/src/c7/wav/testFileRead.cpp.i
+.PHONY : src/c7/wav/testFileRead.cpp.i
+
+src/c7/wav/testFileRead.s: src/c7/wav/testFileRead.cpp.s
+
+.PHONY : src/c7/wav/testFileRead.s
+
+# target to generate assembly for a file
+src/c7/wav/testFileRead.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/src/c7/wav/testFileRead.cpp.s
+.PHONY : src/c7/wav/testFileRead.cpp.s
+
 src/utilities/CharUtil.o: src/utilities/CharUtil.cpp.o
 
 .PHONY : src/utilities/CharUtil.o
@@ -1012,6 +1052,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... testDouble"
+	@echo "... testFileRead"
 	@echo "... testMain"
 	@echo "... testMain2"
 	@echo "... testMock"
@@ -1099,6 +1140,9 @@ help:
 	@echo "... src/c6/1/portfolio.o"
 	@echo "... src/c6/1/portfolio.i"
 	@echo "... src/c6/1/portfolio.s"
+	@echo "... src/c7/wav/testFileRead.o"
+	@echo "... src/c7/wav/testFileRead.i"
+	@echo "... src/c7/wav/testFileRead.s"
 	@echo "... src/utilities/CharUtil.o"
 	@echo "... src/utilities/CharUtil.i"
 	@echo "... src/utilities/CharUtil.s"

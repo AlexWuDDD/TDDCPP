@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/e823551/Documents/TDDCPP/googletest-release-1.11.0/googletest/include -I/Users/e823551/Documents/TDDCPP/googletest-release-1.11.0/googlemock/include -I/Users/e823551/Documents/TDDCPP/jsoncpp-1.9.4/include -I/Users/e823551/Documents/TDDCPP/curl-7.77.0/inclide -I/Users/e823551/Documents/TDDCPP/boost_1_76_0
+CXX_INCLUDES = -I/Users/e823551/Documents/TDDCPP/googletest-release-1.11.0/googletest/include -I/Users/e823551/Documents/TDDCPP/googletest-release-1.11.0/googlemock/include -I/Users/e823551/Documents/TDDCPP/jsoncpp-1.9.4/include -I/Users/e823551/Documents/TDDCPP/curl-7.77.0/inclide -I/Users/e823551/Documents/TDDCPP/boost_1_76_0 -I/Users/e823551/Documents/TDDCPP/rlog-1.4/rlog -I/Users/e823551/Documents/TDDCPP/cpputest-3.8/include
 
 CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++11
 

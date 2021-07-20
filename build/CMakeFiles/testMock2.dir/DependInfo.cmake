@@ -16,6 +16,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../jsoncpp-1.9.4/include"
   "../curl-7.77.0/inclide"
   "../boost_1_76_0"
+  "../rlog-1.4/rlog"
+  "../cpputest-3.8/include"
   )
 
 # Targets to which this target links.
