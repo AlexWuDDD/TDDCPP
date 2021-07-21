@@ -1,0 +1,15 @@
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/libglog.0.5.0.dylib
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/libglog.0.dylib
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/libglog.dylib
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include/glog/export.h
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include/glog/logging.h
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include/glog/raw_logging.h
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include/glog/stl_logging.h
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include/glog/vlog_is_on.h
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include/glog/log_severity.h
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/pkgconfig/libglog.pc
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/cmake/glog/glog-modules.cmake
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/cmake/glog/glog-config.cmake
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/cmake/glog/glog-config-version.cmake
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/cmake/glog/glog-targets.cmake
+/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib/cmake/glog/glog-targets-noconfig.cmake

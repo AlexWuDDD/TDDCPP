@@ -1,0 +1,10 @@
+prefix=/Users/e823551/Documents/TDDCPP/glog-0.5.0/install
+exec_prefix=/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/bin
+libdir=/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/lib
+includedir=/Users/e823551/Documents/TDDCPP/glog-0.5.0/install/include
+
+Name: libglog
+Description: Google Log (glog) C++ logging framework
+Version: 0.5.0
+Libs: -L${libdir} -lglog
+Cflags: -I${includedir}

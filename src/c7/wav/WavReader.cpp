@@ -6,8 +6,7 @@
 #include <cstdint>
 #include <algorithm>
 
-#include "rlog/rlog.h"
-#include "rlog/StdioNode.h"
+#include "boost/filesystem.hpp"
 
 bool hasExtension(const std::string& filename, const std::string& substring)
 {
@@ -194,15 +193,8 @@ void WavReader::open(const std::string& name, bool trace) {
 
    uint32_t startingSample{
       totalSeconds >= 10 ? 10 * formatSubchunk.samplesPerSecond : 0};
-   writeSamples(out, data, startingSample, samplesToWrite, bytesPerSample);
-   rLog(channel, "writing %u samples", samplesToWrite);
-   for (auto sample = startingSample; 
-        sample < startingSample + samplesToWrite; 
-        sample++) {
-      auto byteOffsetForSample = sample * bytesPerSample;
-      for (uint32_t byte{0}; byte < bytesPerSample; byte++) 
-         out.put(data[byteOffsetForSample + byte]);
-   }
+   writeSamples(&out, data, startingSample, samplesToWrite, bytesPerSample);
+   
    rLog(channel, "completed writing %s", name.c_str());
    m_descriptor->add(m_dest, name, 
          totalSeconds, formatSubchunk.samplesPerSecond, formatSubchunk.channels);
@@ -214,10 +206,17 @@ void WavReader::seekToEndOfHeader(std::ifstream& file, int subchunkSize) {
    file.seekg(bytes, std::ios_base::cur);
 }
 
-void WavReader::writeSamples(std::ofstream& out, char* data, 
+void WavReader::writeSamples(std::ostream* out, char* data, 
    uint32_t startingSample, 
    uint32_t samplesToWrite, 
    uint32_t bytesPerSample)
 {
-
+   rLog(channel, "writing %u samples", samplesToWrite);
+   for (auto sample = startingSample; 
+        sample < startingSample + samplesToWrite; 
+        sample++) {
+      auto byteOffsetForSample = sample * bytesPerSample;
+      for (uint32_t byte{0}; byte < bytesPerSample; byte++) 
+         out->put(data[byteOffsetForSample + byte]);
+   }
 }

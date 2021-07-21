@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named testEventlog
+
+# Build rule for target.
+testEventlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testEventlog
+.PHONY : testEventlog
+
+# fast build rule for target.
+testEventlog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/build
+.PHONY : testEventlog/fast
+
+#=============================================================================
 # Target rules for targets named testFileRead
 
 # Build rule for target.
@@ -989,6 +1002,87 @@ src/c7/wav/testFileRead.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/src/c7/wav/testFileRead.cpp.s
 .PHONY : src/c7/wav/testFileRead.cpp.s
 
+src/common/Common.o: src/common/Common.cpp.o
+
+.PHONY : src/common/Common.o
+
+# target to build an object file
+src/common/Common.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/common/Common.cpp.o
+.PHONY : src/common/Common.cpp.o
+
+src/common/Common.i: src/common/Common.cpp.i
+
+.PHONY : src/common/Common.i
+
+# target to preprocess a source file
+src/common/Common.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/common/Common.cpp.i
+.PHONY : src/common/Common.cpp.i
+
+src/common/Common.s: src/common/Common.cpp.s
+
+.PHONY : src/common/Common.s
+
+# target to generate assembly for a file
+src/common/Common.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/common/Common.cpp.s
+.PHONY : src/common/Common.cpp.s
+
+src/eventlog/Eventlog.o: src/eventlog/Eventlog.cpp.o
+
+.PHONY : src/eventlog/Eventlog.o
+
+# target to build an object file
+src/eventlog/Eventlog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o
+.PHONY : src/eventlog/Eventlog.cpp.o
+
+src/eventlog/Eventlog.i: src/eventlog/Eventlog.cpp.i
+
+.PHONY : src/eventlog/Eventlog.i
+
+# target to preprocess a source file
+src/eventlog/Eventlog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.i
+.PHONY : src/eventlog/Eventlog.cpp.i
+
+src/eventlog/Eventlog.s: src/eventlog/Eventlog.cpp.s
+
+.PHONY : src/eventlog/Eventlog.s
+
+# target to generate assembly for a file
+src/eventlog/Eventlog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.s
+.PHONY : src/eventlog/Eventlog.cpp.s
+
+src/eventlog/eventlogTest.o: src/eventlog/eventlogTest.cpp.o
+
+.PHONY : src/eventlog/eventlogTest.o
+
+# target to build an object file
+src/eventlog/eventlogTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/eventlogTest.cpp.o
+.PHONY : src/eventlog/eventlogTest.cpp.o
+
+src/eventlog/eventlogTest.i: src/eventlog/eventlogTest.cpp.i
+
+.PHONY : src/eventlog/eventlogTest.i
+
+# target to preprocess a source file
+src/eventlog/eventlogTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/eventlogTest.cpp.i
+.PHONY : src/eventlog/eventlogTest.cpp.i
+
+src/eventlog/eventlogTest.s: src/eventlog/eventlogTest.cpp.s
+
+.PHONY : src/eventlog/eventlogTest.s
+
+# target to generate assembly for a file
+src/eventlog/eventlogTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/eventlogTest.cpp.s
+.PHONY : src/eventlog/eventlogTest.cpp.s
+
 src/utilities/CharUtil.o: src/utilities/CharUtil.cpp.o
 
 .PHONY : src/utilities/CharUtil.o
@@ -1052,6 +1146,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... testDouble"
+	@echo "... testEventlog"
 	@echo "... testFileRead"
 	@echo "... testMain"
 	@echo "... testMain2"
@@ -1143,6 +1238,15 @@ help:
 	@echo "... src/c7/wav/testFileRead.o"
 	@echo "... src/c7/wav/testFileRead.i"
 	@echo "... src/c7/wav/testFileRead.s"
+	@echo "... src/common/Common.o"
+	@echo "... src/common/Common.i"
+	@echo "... src/common/Common.s"
+	@echo "... src/eventlog/Eventlog.o"
+	@echo "... src/eventlog/Eventlog.i"
+	@echo "... src/eventlog/Eventlog.s"
+	@echo "... src/eventlog/eventlogTest.o"
+	@echo "... src/eventlog/eventlogTest.i"
+	@echo "... src/eventlog/eventlogTest.s"
 	@echo "... src/utilities/CharUtil.o"
 	@echo "... src/utilities/CharUtil.i"
 	@echo "... src/utilities/CharUtil.s"

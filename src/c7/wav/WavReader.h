@@ -6,8 +6,6 @@
 #include "boost/filesystem.hpp"
 
 #include "WavDescriptor.h"
-#include "rlog/StdioNode.h"
-#include "rlog/RLogChannel.h"
 
 bool hasExtension(const std::string& filename, const std::string& substring);
 
@@ -24,18 +22,16 @@ public:
     void listAll() const;
     void publishSnippets();
 private:
-    rlog::StdioNode log{STDERR_FILENO};
     WavDescriptor* m_descriptor;
 
     void seekToEndOfHeader(std::ifstream& file, int headerLength);
     std::string toString(int8_t* c, unsigned int size);
-    rlog::RLogChannel* channel;
 
     std::string m_source;
     std::string m_dest;
 
 public:
-    void writeSamples(std::ofstream& out, char* data, 
+    void writeSamples(std::ostream* out, char* data, 
         uint32_t startingSample,
         uint32_t samplesToWrite,
         uint32_t bytesPerSample);
