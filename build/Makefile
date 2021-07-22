@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named testMock3
+
+# Build rule for target.
+testMock3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testMock3
+.PHONY : testMock3
+
+# fast build rule for target.
+testMock3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
+.PHONY : testMock3/fast
+
+#=============================================================================
 # Target rules for targets named testEventlog
 
 # Build rule for target.
@@ -182,19 +195,6 @@ testMock/fast:
 .PHONY : testMock/fast
 
 #=============================================================================
-# Target rules for targets named testMock3
-
-# Build rule for target.
-testMock3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testMock3
-.PHONY : testMock3
-
-# fast build rule for target.
-testMock3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
-.PHONY : testMock3/fast
-
-#=============================================================================
 # Target rules for targets named testDouble
 
 # Build rule for target.
@@ -206,6 +206,19 @@ testDouble: cmake_check_build_system
 testDouble/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testDouble.dir/build.make CMakeFiles/testDouble.dir/build
 .PHONY : testDouble/fast
+
+#=============================================================================
+# Target rules for targets named testWav
+
+# Build rule for target.
+testWav: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testWav
+.PHONY : testWav
+
+# fast build rule for target.
+testWav/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/build
+.PHONY : testWav/fast
 
 #=============================================================================
 # Target rules for targets named testMain2
@@ -975,6 +988,87 @@ src/c6/1/portfolio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testSimpleDesign.dir/build.make CMakeFiles/testSimpleDesign.dir/src/c6/1/portfolio.cpp.s
 .PHONY : src/c6/1/portfolio.cpp.s
 
+src/c7/wav/WavDescriptor.o: src/c7/wav/WavDescriptor.cpp.o
+
+.PHONY : src/c7/wav/WavDescriptor.o
+
+# target to build an object file
+src/c7/wav/WavDescriptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.o
+.PHONY : src/c7/wav/WavDescriptor.cpp.o
+
+src/c7/wav/WavDescriptor.i: src/c7/wav/WavDescriptor.cpp.i
+
+.PHONY : src/c7/wav/WavDescriptor.i
+
+# target to preprocess a source file
+src/c7/wav/WavDescriptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.i
+.PHONY : src/c7/wav/WavDescriptor.cpp.i
+
+src/c7/wav/WavDescriptor.s: src/c7/wav/WavDescriptor.cpp.s
+
+.PHONY : src/c7/wav/WavDescriptor.s
+
+# target to generate assembly for a file
+src/c7/wav/WavDescriptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.s
+.PHONY : src/c7/wav/WavDescriptor.cpp.s
+
+src/c7/wav/WavReader.o: src/c7/wav/WavReader.cpp.o
+
+.PHONY : src/c7/wav/WavReader.o
+
+# target to build an object file
+src/c7/wav/WavReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.o
+.PHONY : src/c7/wav/WavReader.cpp.o
+
+src/c7/wav/WavReader.i: src/c7/wav/WavReader.cpp.i
+
+.PHONY : src/c7/wav/WavReader.i
+
+# target to preprocess a source file
+src/c7/wav/WavReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.i
+.PHONY : src/c7/wav/WavReader.cpp.i
+
+src/c7/wav/WavReader.s: src/c7/wav/WavReader.cpp.s
+
+.PHONY : src/c7/wav/WavReader.s
+
+# target to generate assembly for a file
+src/c7/wav/WavReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.s
+.PHONY : src/c7/wav/WavReader.cpp.s
+
+src/c7/wav/WavReaderTest.o: src/c7/wav/WavReaderTest.cpp.o
+
+.PHONY : src/c7/wav/WavReaderTest.o
+
+# target to build an object file
+src/c7/wav/WavReaderTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.o
+.PHONY : src/c7/wav/WavReaderTest.cpp.o
+
+src/c7/wav/WavReaderTest.i: src/c7/wav/WavReaderTest.cpp.i
+
+.PHONY : src/c7/wav/WavReaderTest.i
+
+# target to preprocess a source file
+src/c7/wav/WavReaderTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.i
+.PHONY : src/c7/wav/WavReaderTest.cpp.i
+
+src/c7/wav/WavReaderTest.s: src/c7/wav/WavReaderTest.cpp.s
+
+.PHONY : src/c7/wav/WavReaderTest.s
+
+# target to generate assembly for a file
+src/c7/wav/WavReaderTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.s
+.PHONY : src/c7/wav/WavReaderTest.cpp.s
+
 src/c7/wav/testFileRead.o: src/c7/wav/testFileRead.cpp.o
 
 .PHONY : src/c7/wav/testFileRead.o
@@ -1002,6 +1096,33 @@ src/c7/wav/testFileRead.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFileRead.dir/build.make CMakeFiles/testFileRead.dir/src/c7/wav/testFileRead.cpp.s
 .PHONY : src/c7/wav/testFileRead.cpp.s
 
+src/c7/wav/testMain.o: src/c7/wav/testMain.cpp.o
+
+.PHONY : src/c7/wav/testMain.o
+
+# target to build an object file
+src/c7/wav/testMain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.o
+.PHONY : src/c7/wav/testMain.cpp.o
+
+src/c7/wav/testMain.i: src/c7/wav/testMain.cpp.i
+
+.PHONY : src/c7/wav/testMain.i
+
+# target to preprocess a source file
+src/c7/wav/testMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.i
+.PHONY : src/c7/wav/testMain.cpp.i
+
+src/c7/wav/testMain.s: src/c7/wav/testMain.cpp.s
+
+.PHONY : src/c7/wav/testMain.s
+
+# target to generate assembly for a file
+src/c7/wav/testMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.s
+.PHONY : src/c7/wav/testMain.cpp.s
+
 src/common/Common.o: src/common/Common.cpp.o
 
 .PHONY : src/common/Common.o
@@ -1009,6 +1130,7 @@ src/common/Common.o: src/common/Common.cpp.o
 # target to build an object file
 src/common/Common.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/common/Common.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/common/Common.cpp.o
 .PHONY : src/common/Common.cpp.o
 
 src/common/Common.i: src/common/Common.cpp.i
@@ -1018,6 +1140,7 @@ src/common/Common.i: src/common/Common.cpp.i
 # target to preprocess a source file
 src/common/Common.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/common/Common.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/common/Common.cpp.i
 .PHONY : src/common/Common.cpp.i
 
 src/common/Common.s: src/common/Common.cpp.s
@@ -1027,6 +1150,7 @@ src/common/Common.s: src/common/Common.cpp.s
 # target to generate assembly for a file
 src/common/Common.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/common/Common.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/common/Common.cpp.s
 .PHONY : src/common/Common.cpp.s
 
 src/eventlog/Eventlog.o: src/eventlog/Eventlog.cpp.o
@@ -1036,6 +1160,7 @@ src/eventlog/Eventlog.o: src/eventlog/Eventlog.cpp.o
 # target to build an object file
 src/eventlog/Eventlog.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o
 .PHONY : src/eventlog/Eventlog.cpp.o
 
 src/eventlog/Eventlog.i: src/eventlog/Eventlog.cpp.i
@@ -1045,6 +1170,7 @@ src/eventlog/Eventlog.i: src/eventlog/Eventlog.cpp.i
 # target to preprocess a source file
 src/eventlog/Eventlog.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.i
 .PHONY : src/eventlog/Eventlog.cpp.i
 
 src/eventlog/Eventlog.s: src/eventlog/Eventlog.cpp.s
@@ -1054,6 +1180,7 @@ src/eventlog/Eventlog.s: src/eventlog/Eventlog.cpp.s
 # target to generate assembly for a file
 src/eventlog/Eventlog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testEventlog.dir/build.make CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.s
 .PHONY : src/eventlog/Eventlog.cpp.s
 
 src/eventlog/eventlogTest.o: src/eventlog/eventlogTest.cpp.o
@@ -1154,6 +1281,7 @@ help:
 	@echo "... testMock2"
 	@echo "... testMock3"
 	@echo "... testSimpleDesign"
+	@echo "... testWav"
 	@echo "... src/RetweetCollection/RetweetCollection.o"
 	@echo "... src/RetweetCollection/RetweetCollection.i"
 	@echo "... src/RetweetCollection/RetweetCollection.s"
@@ -1235,9 +1363,21 @@ help:
 	@echo "... src/c6/1/portfolio.o"
 	@echo "... src/c6/1/portfolio.i"
 	@echo "... src/c6/1/portfolio.s"
+	@echo "... src/c7/wav/WavDescriptor.o"
+	@echo "... src/c7/wav/WavDescriptor.i"
+	@echo "... src/c7/wav/WavDescriptor.s"
+	@echo "... src/c7/wav/WavReader.o"
+	@echo "... src/c7/wav/WavReader.i"
+	@echo "... src/c7/wav/WavReader.s"
+	@echo "... src/c7/wav/WavReaderTest.o"
+	@echo "... src/c7/wav/WavReaderTest.i"
+	@echo "... src/c7/wav/WavReaderTest.s"
 	@echo "... src/c7/wav/testFileRead.o"
 	@echo "... src/c7/wav/testFileRead.i"
 	@echo "... src/c7/wav/testFileRead.s"
+	@echo "... src/c7/wav/testMain.o"
+	@echo "... src/c7/wav/testMain.i"
+	@echo "... src/c7/wav/testMain.s"
 	@echo "... src/common/Common.o"
 	@echo "... src/common/Common.i"
 	@echo "... src/common/Common.s"

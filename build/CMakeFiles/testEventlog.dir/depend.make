@@ -4,9 +4,15 @@
 CMakeFiles/testEventlog.dir/src/common/Common.cpp.o: ../src/common/Common.cpp
 CMakeFiles/testEventlog.dir/src/common/Common.cpp.o: ../src/common/Common.h
 
+CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../glog-0.5.0/install/include/glog/export.h
+CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../glog-0.5.0/install/include/glog/log_severity.h
+CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../glog-0.5.0/install/include/glog/logging.h
+CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../glog-0.5.0/install/include/glog/vlog_is_on.h
+CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../src/common/Common.h
 CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../src/eventlog/Eventlog.cpp
 CMakeFiles/testEventlog.dir/src/eventlog/Eventlog.cpp.o: ../src/eventlog/Eventlog.h
 
+CMakeFiles/testEventlog.dir/src/eventlog/eventlogTest.cpp.o: ../src/common/Common.h
 CMakeFiles/testEventlog.dir/src/eventlog/eventlogTest.cpp.o: ../src/eventlog/Eventlog.h
 CMakeFiles/testEventlog.dir/src/eventlog/eventlogTest.cpp.o: ../src/eventlog/eventlogTest.cpp
 

@@ -72,12 +72,13 @@ CMAKE_BINARY_DIR = /Users/e823551/Documents/TDDCPP/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/testMock3.dir/all
 all: CMakeFiles/testEventlog.dir/all
 all: CMakeFiles/testFileRead.dir/all
 all: CMakeFiles/testSimpleDesign.dir/all
 all: CMakeFiles/testMock.dir/all
-all: CMakeFiles/testMock3.dir/all
 all: CMakeFiles/testDouble.dir/all
+all: CMakeFiles/testWav.dir/all
 all: CMakeFiles/testMain2.dir/all
 all: CMakeFiles/testMock2.dir/all
 all: CMakeFiles/testMain.dir/all
@@ -90,17 +91,45 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/testMock3.dir/clean
 clean: CMakeFiles/testEventlog.dir/clean
 clean: CMakeFiles/testFileRead.dir/clean
 clean: CMakeFiles/testSimpleDesign.dir/clean
 clean: CMakeFiles/testMock.dir/clean
-clean: CMakeFiles/testMock3.dir/clean
 clean: CMakeFiles/testDouble.dir/clean
+clean: CMakeFiles/testWav.dir/clean
 clean: CMakeFiles/testMain2.dir/clean
 clean: CMakeFiles/testMock2.dir/clean
 clean: CMakeFiles/testMain.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testMock3.dir
+
+# All Build rule for target.
+CMakeFiles/testMock3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=32,33,34,35,36,37,38 "Built target testMock3"
+.PHONY : CMakeFiles/testMock3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testMock3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testMock3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
+.PHONY : CMakeFiles/testMock3.dir/rule
+
+# Convenience name for target.
+testMock3: CMakeFiles/testMock3.dir/rule
+
+.PHONY : testMock3
+
+# clean rule for target.
+CMakeFiles/testMock3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/clean
+.PHONY : CMakeFiles/testMock3.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/testEventlog.dir
@@ -211,33 +240,6 @@ CMakeFiles/testMock.dir/clean:
 .PHONY : CMakeFiles/testMock.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/testMock3.dir
-
-# All Build rule for target.
-CMakeFiles/testMock3.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=32,33,34,35,36,37,38 "Built target testMock3"
-.PHONY : CMakeFiles/testMock3.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/testMock3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testMock3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
-.PHONY : CMakeFiles/testMock3.dir/rule
-
-# Convenience name for target.
-testMock3: CMakeFiles/testMock3.dir/rule
-
-.PHONY : testMock3
-
-# clean rule for target.
-CMakeFiles/testMock3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/clean
-.PHONY : CMakeFiles/testMock3.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/testDouble.dir
 
 # All Build rule for target.
@@ -263,6 +265,33 @@ testDouble: CMakeFiles/testDouble.dir/rule
 CMakeFiles/testDouble.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testDouble.dir/build.make CMakeFiles/testDouble.dir/clean
 .PHONY : CMakeFiles/testDouble.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testWav.dir
+
+# All Build rule for target.
+CMakeFiles/testWav.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=43,44,45,46,47,48,49 "Built target testWav"
+.PHONY : CMakeFiles/testWav.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testWav.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testWav.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
+.PHONY : CMakeFiles/testWav.dir/rule
+
+# Convenience name for target.
+testWav: CMakeFiles/testWav.dir/rule
+
+.PHONY : testWav
+
+# clean rule for target.
+CMakeFiles/testWav.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/clean
+.PHONY : CMakeFiles/testWav.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/testMain2.dir

@@ -1,22 +1,23 @@
-#include "CppUTest/TestHarness.h" 
+#include "gtest/gtest.h"
 #include "WavReader.h"
 #include <iostream>
 #include <string>
 #include <sstream>
+#include "Eventlog.h"
 
 using namespace std;
-TEST_GROUP(WavReader_WriteSamples)
-{
-    WavReader reader{"",""};
+class WavReaderTest : public ::testing::Test {
+public:
+    WavReader reader{".","."};
     ostringstream out;
 };
 
-TEST(WavReader_WriteSamples, WritesSingleSample) 
+TEST_F(WavReaderTest, WritesSingleSample) 
 { 
-    char data[] { "abcd" };
+    char data[] = "abcd";
     uint32_t bytesPerSample { 1 };
     uint32_t startingSample { 0 };
     uint32_t samplesToWrite { 1 };
     reader.writeSamples(&out, data, startingSample, samplesToWrite, bytesPerSample); 
-    CHECK_EQUAL("a", out.str());
+    EXPECT_EQ("a", out.str());
 }

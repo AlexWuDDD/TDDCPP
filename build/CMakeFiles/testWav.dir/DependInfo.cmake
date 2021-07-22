@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/e823551/Documents/TDDCPP/src/c7/wav/WavReader.cpp" "/Users/e823551/Documents/TDDCPP/build/CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.o"
   "/Users/e823551/Documents/TDDCPP/src/c7/wav/WavReaderTest.cpp" "/Users/e823551/Documents/TDDCPP/build/CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.o"
   "/Users/e823551/Documents/TDDCPP/src/c7/wav/testMain.cpp" "/Users/e823551/Documents/TDDCPP/build/CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.o"
+  "/Users/e823551/Documents/TDDCPP/src/common/Common.cpp" "/Users/e823551/Documents/TDDCPP/build/CMakeFiles/testWav.dir/src/common/Common.cpp.o"
+  "/Users/e823551/Documents/TDDCPP/src/eventlog/Eventlog.cpp" "/Users/e823551/Documents/TDDCPP/build/CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

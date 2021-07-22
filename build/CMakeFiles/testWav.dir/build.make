@@ -128,12 +128,40 @@ CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/c7/wav/WavDescriptor.cpp -o CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.s
 
+CMakeFiles/testWav.dir/src/common/Common.cpp.o: CMakeFiles/testWav.dir/flags.make
+CMakeFiles/testWav.dir/src/common/Common.cpp.o: ../src/common/Common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testWav.dir/src/common/Common.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testWav.dir/src/common/Common.cpp.o -c /Users/e823551/Documents/TDDCPP/src/common/Common.cpp
+
+CMakeFiles/testWav.dir/src/common/Common.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testWav.dir/src/common/Common.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/e823551/Documents/TDDCPP/src/common/Common.cpp > CMakeFiles/testWav.dir/src/common/Common.cpp.i
+
+CMakeFiles/testWav.dir/src/common/Common.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testWav.dir/src/common/Common.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/common/Common.cpp -o CMakeFiles/testWav.dir/src/common/Common.cpp.s
+
+CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o: CMakeFiles/testWav.dir/flags.make
+CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o: ../src/eventlog/Eventlog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o -c /Users/e823551/Documents/TDDCPP/src/eventlog/Eventlog.cpp
+
+CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/e823551/Documents/TDDCPP/src/eventlog/Eventlog.cpp > CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.i
+
+CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/eventlog/Eventlog.cpp -o CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.s
+
 # Object files for target testWav
 testWav_OBJECTS = \
 "CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.o" \
 "CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.o" \
 "CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.o" \
-"CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.o"
+"CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.o" \
+"CMakeFiles/testWav.dir/src/common/Common.cpp.o" \
+"CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o"
 
 # External object files for target testWav
 testWav_EXTERNAL_OBJECTS =
@@ -142,9 +170,11 @@ testWav: CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.o
 testWav: CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.o
 testWav: CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.o
 testWav: CMakeFiles/testWav.dir/src/c7/wav/WavDescriptor.cpp.o
+testWav: CMakeFiles/testWav.dir/src/common/Common.cpp.o
+testWav: CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o
 testWav: CMakeFiles/testWav.dir/build.make
 testWav: CMakeFiles/testWav.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable testWav"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable testWav"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testWav.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

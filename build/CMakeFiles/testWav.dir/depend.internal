@@ -528,6 +528,7 @@ CMakeFiles/testWav.dir/src/c7/wav/WavReader.cpp.o
  ../boost_1_76_0/boost/winapi/error_handling.hpp
  ../boost_1_76_0/boost/winapi/get_last_error.hpp
  ../boost_1_76_0/boost/winapi/local_memory.hpp
+ ../src/eventlog/Eventlog.h
  /Users/e823551/Documents/TDDCPP/src/c7/wav/WavDescriptor.h
  /Users/e823551/Documents/TDDCPP/src/c7/wav/WavReader.cpp
  /Users/e823551/Documents/TDDCPP/src/c7/wav/WavReader.h
@@ -1055,36 +1056,60 @@ CMakeFiles/testWav.dir/src/c7/wav/WavReaderTest.cpp.o
  ../boost_1_76_0/boost/winapi/error_handling.hpp
  ../boost_1_76_0/boost/winapi/get_last_error.hpp
  ../boost_1_76_0/boost/winapi/local_memory.hpp
- ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
- ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
- ../cpputest-3.8/include/CppUTest/MemoryLeakDetectorNewMacros.h
- ../cpputest-3.8/include/CppUTest/MemoryLeakWarningPlugin.h
- ../cpputest-3.8/include/CppUTest/SimpleString.h
- ../cpputest-3.8/include/CppUTest/StandardCLibrary.h
- ../cpputest-3.8/include/CppUTest/TestFailure.h
- ../cpputest-3.8/include/CppUTest/TestHarness.h
- ../cpputest-3.8/include/CppUTest/TestPlugin.h
- ../cpputest-3.8/include/CppUTest/TestResult.h
- ../cpputest-3.8/include/CppUTest/Utest.h
- ../cpputest-3.8/include/CppUTest/UtestMacros.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-death-test.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-matchers.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-message.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-param-test.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-printers.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-test-part.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-typed-test.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest_pred_impl.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest_prod.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/custom/gtest-port.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-filepath.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-internal.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-param-util.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-port-arch.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-port.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-string.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-type-util.h
+ ../src/eventlog/Eventlog.h
  /Users/e823551/Documents/TDDCPP/src/c7/wav/WavDescriptor.h
  /Users/e823551/Documents/TDDCPP/src/c7/wav/WavReader.h
  /Users/e823551/Documents/TDDCPP/src/c7/wav/WavReaderTest.cpp
 CMakeFiles/testWav.dir/src/c7/wav/testMain.cpp.o
- ../cpputest-3.8/include/CppUTest/CommandLineArguments.h
- ../cpputest-3.8/include/CppUTest/CommandLineTestRunner.h
- ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
- ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
- ../cpputest-3.8/include/CppUTest/MemoryLeakDetectorNewMacros.h
- ../cpputest-3.8/include/CppUTest/MemoryLeakWarningPlugin.h
- ../cpputest-3.8/include/CppUTest/SimpleString.h
- ../cpputest-3.8/include/CppUTest/StandardCLibrary.h
- ../cpputest-3.8/include/CppUTest/TestFailure.h
- ../cpputest-3.8/include/CppUTest/TestFilter.h
- ../cpputest-3.8/include/CppUTest/TestHarness.h
- ../cpputest-3.8/include/CppUTest/TestOutput.h
- ../cpputest-3.8/include/CppUTest/TestPlugin.h
- ../cpputest-3.8/include/CppUTest/TestResult.h
- ../cpputest-3.8/include/CppUTest/Utest.h
- ../cpputest-3.8/include/CppUTest/UtestMacros.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-death-test.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-matchers.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-message.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-param-test.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-printers.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-test-part.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest-typed-test.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest_pred_impl.h
+ ../googletest-release-1.11.0/googletest/include/gtest/gtest_prod.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/custom/gtest-port.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-filepath.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-internal.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-param-util.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-port-arch.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-port.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-string.h
+ ../googletest-release-1.11.0/googletest/include/gtest/internal/gtest-type-util.h
  /Users/e823551/Documents/TDDCPP/src/c7/wav/testMain.cpp
+CMakeFiles/testWav.dir/src/common/Common.cpp.o
+ /Users/e823551/Documents/TDDCPP/src/common/Common.cpp
+ /Users/e823551/Documents/TDDCPP/src/common/Common.h
+CMakeFiles/testWav.dir/src/eventlog/Eventlog.cpp.o
+ ../glog-0.5.0/install/include/glog/export.h
+ ../glog-0.5.0/install/include/glog/log_severity.h
+ ../glog-0.5.0/install/include/glog/logging.h
+ ../glog-0.5.0/install/include/glog/vlog_is_on.h
+ ../src/common/Common.h
+ /Users/e823551/Documents/TDDCPP/src/eventlog/Eventlog.cpp
+ /Users/e823551/Documents/TDDCPP/src/eventlog/Eventlog.h

@@ -114,10 +114,11 @@ add_executable(testEventlog
 )
 target_link_libraries(testEventlog glog)
 
-# add_executable(testWav
-#     src/c7/wav/testMain.cpp
-#     src/c7/wav/WavReaderTest.cpp
-#     src/c7/wav/WavReader.cpp
-#     src/c7/wav/WavDescriptor.cpp
-# )
-# target_link_libraries(testWav pthread  CppUTest boost_filesystem)
+add_executable(testWav
+    src/c7/wav/testMain.cpp
+    src/c7/wav/WavReaderTest.cpp
+    src/c7/wav/WavReader.cpp
+    src/c7/wav/WavDescriptor.cpp
+    ${utilSRCS}
+)
+target_link_libraries(testWav pthread  gtest boost_filesystem glog)
