@@ -72,11 +72,12 @@ CMAKE_BINARY_DIR = /Users/e823551/Documents/TDDCPP/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/testMock3.dir/all
 all: CMakeFiles/testEventlog.dir/all
 all: CMakeFiles/testFileRead.dir/all
 all: CMakeFiles/testSimpleDesign.dir/all
 all: CMakeFiles/testMock.dir/all
+all: CMakeFiles/testMock3.dir/all
+all: CMakeFiles/testThread.dir/all
 all: CMakeFiles/testDouble.dir/all
 all: CMakeFiles/testWav.dir/all
 all: CMakeFiles/testMain2.dir/all
@@ -91,11 +92,12 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/testMock3.dir/clean
 clean: CMakeFiles/testEventlog.dir/clean
 clean: CMakeFiles/testFileRead.dir/clean
 clean: CMakeFiles/testSimpleDesign.dir/clean
 clean: CMakeFiles/testMock.dir/clean
+clean: CMakeFiles/testMock3.dir/clean
+clean: CMakeFiles/testThread.dir/clean
 clean: CMakeFiles/testDouble.dir/clean
 clean: CMakeFiles/testWav.dir/clean
 clean: CMakeFiles/testMain2.dir/clean
@@ -103,33 +105,6 @@ clean: CMakeFiles/testMock2.dir/clean
 clean: CMakeFiles/testMain.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/testMock3.dir
-
-# All Build rule for target.
-CMakeFiles/testMock3.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=32,33,34,35,36,37,38 "Built target testMock3"
-.PHONY : CMakeFiles/testMock3.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/testMock3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testMock3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
-.PHONY : CMakeFiles/testMock3.dir/rule
-
-# Convenience name for target.
-testMock3: CMakeFiles/testMock3.dir/rule
-
-.PHONY : testMock3
-
-# clean rule for target.
-CMakeFiles/testMock3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/clean
-.PHONY : CMakeFiles/testMock3.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/testEventlog.dir
@@ -240,6 +215,60 @@ CMakeFiles/testMock.dir/clean:
 .PHONY : CMakeFiles/testMock.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/testMock3.dir
+
+# All Build rule for target.
+CMakeFiles/testMock3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=32,33,34,35,36,37,38 "Built target testMock3"
+.PHONY : CMakeFiles/testMock3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testMock3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testMock3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
+.PHONY : CMakeFiles/testMock3.dir/rule
+
+# Convenience name for target.
+testMock3: CMakeFiles/testMock3.dir/rule
+
+.PHONY : testMock3
+
+# clean rule for target.
+CMakeFiles/testMock3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testMock3.dir/build.make CMakeFiles/testMock3.dir/clean
+.PHONY : CMakeFiles/testMock3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testThread.dir
+
+# All Build rule for target.
+CMakeFiles/testThread.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51 "Built target testThread"
+.PHONY : CMakeFiles/testThread.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testThread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testThread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/e823551/Documents/TDDCPP/build/CMakeFiles 0
+.PHONY : CMakeFiles/testThread.dir/rule
+
+# Convenience name for target.
+testThread: CMakeFiles/testThread.dir/rule
+
+.PHONY : testThread
+
+# clean rule for target.
+CMakeFiles/testThread.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/clean
+.PHONY : CMakeFiles/testThread.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/testDouble.dir
 
 # All Build rule for target.
@@ -273,7 +302,7 @@ CMakeFiles/testDouble.dir/clean:
 CMakeFiles/testWav.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testWav.dir/build.make CMakeFiles/testWav.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=43,44,45,46,47,48,49 "Built target testWav"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=52,53,54,55,56,57,58 "Built target testWav"
 .PHONY : CMakeFiles/testWav.dir/all
 
 # Build rule for subdir invocation for target.

@@ -122,3 +122,16 @@ add_executable(testWav
     ${utilSRCS}
 )
 target_link_libraries(testWav pthread  gtest boost_filesystem glog)
+
+add_executable(testThread
+    src/c9/testMain.cpp
+    src/c9/CppUTestExtensionsTest.cpp
+    src/c9/CppUTestExtensions.cpp
+
+    src/c9/Area.cpp
+    src/c9/Location.cpp
+    src/c9/GeoServer.cpp
+    src/c9/GeoServerTest.cpp
+    src/c9/GeoServerTest2.cpp
+)
+target_link_libraries(testThread pthread CppUTest)
