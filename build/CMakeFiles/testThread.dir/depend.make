@@ -77,11 +77,51 @@ CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/CppUTestExtensi
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/GeoServer.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/GeoServerTest2.cpp
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/Location.h
+CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/TestTimer.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/User.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/VectorUtil.h
 
 CMakeFiles/testThread.dir/src/c9/Location.cpp.o: ../src/c9/Location.cpp
 CMakeFiles/testThread.dir/src/c9/Location.cpp.o: ../src/c9/Location.h
+
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../cpputest-3.8/include/CppUTest/SimpleString.h
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../cpputest-3.8/include/CppUTest/StandardCLibrary.h
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../cpputest-3.8/include/CppUTest/Utest.h
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../src/c9/TestTimer.cpp
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../src/c9/TestTimer.h
+
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/MemoryLeakDetectorNewMacros.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/MemoryLeakWarningPlugin.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/SimpleString.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/StandardCLibrary.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestFailure.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestHarness.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestPlugin.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestResult.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/Utest.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../cpputest-3.8/include/CppUTest/UtestMacros.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../src/c9/ThreadPool.h
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../src/c9/ThreadPoolTest.cpp
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../src/c9/Work.h
+
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/MemoryLeakDetectorNewMacros.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/MemoryLeakWarningPlugin.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/SimpleString.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/StandardCLibrary.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestFailure.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestHarness.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestPlugin.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/TestResult.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/Utest.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../cpputest-3.8/include/CppUTest/UtestMacros.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../src/c9/Work.h
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../src/c9/WorkTest.cpp
 
 CMakeFiles/testThread.dir/src/c9/testMain.cpp.o: ../cpputest-3.8/include/CppUTest/CommandLineArguments.h
 CMakeFiles/testThread.dir/src/c9/testMain.cpp.o: ../cpputest-3.8/include/CppUTest/CommandLineTestRunner.h

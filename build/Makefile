@@ -1325,6 +1325,87 @@ src/c9/Location.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/Location.cpp.s
 .PHONY : src/c9/Location.cpp.s
 
+src/c9/TestTimer.o: src/c9/TestTimer.cpp.o
+
+.PHONY : src/c9/TestTimer.o
+
+# target to build an object file
+src/c9/TestTimer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o
+.PHONY : src/c9/TestTimer.cpp.o
+
+src/c9/TestTimer.i: src/c9/TestTimer.cpp.i
+
+.PHONY : src/c9/TestTimer.i
+
+# target to preprocess a source file
+src/c9/TestTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.i
+.PHONY : src/c9/TestTimer.cpp.i
+
+src/c9/TestTimer.s: src/c9/TestTimer.cpp.s
+
+.PHONY : src/c9/TestTimer.s
+
+# target to generate assembly for a file
+src/c9/TestTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.s
+.PHONY : src/c9/TestTimer.cpp.s
+
+src/c9/ThreadPoolTest.o: src/c9/ThreadPoolTest.cpp.o
+
+.PHONY : src/c9/ThreadPoolTest.o
+
+# target to build an object file
+src/c9/ThreadPoolTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o
+.PHONY : src/c9/ThreadPoolTest.cpp.o
+
+src/c9/ThreadPoolTest.i: src/c9/ThreadPoolTest.cpp.i
+
+.PHONY : src/c9/ThreadPoolTest.i
+
+# target to preprocess a source file
+src/c9/ThreadPoolTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.i
+.PHONY : src/c9/ThreadPoolTest.cpp.i
+
+src/c9/ThreadPoolTest.s: src/c9/ThreadPoolTest.cpp.s
+
+.PHONY : src/c9/ThreadPoolTest.s
+
+# target to generate assembly for a file
+src/c9/ThreadPoolTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.s
+.PHONY : src/c9/ThreadPoolTest.cpp.s
+
+src/c9/WorkTest.o: src/c9/WorkTest.cpp.o
+
+.PHONY : src/c9/WorkTest.o
+
+# target to build an object file
+src/c9/WorkTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o
+.PHONY : src/c9/WorkTest.cpp.o
+
+src/c9/WorkTest.i: src/c9/WorkTest.cpp.i
+
+.PHONY : src/c9/WorkTest.i
+
+# target to preprocess a source file
+src/c9/WorkTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.i
+.PHONY : src/c9/WorkTest.cpp.i
+
+src/c9/WorkTest.s: src/c9/WorkTest.cpp.s
+
+.PHONY : src/c9/WorkTest.s
+
+# target to generate assembly for a file
+src/c9/WorkTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testThread.dir/build.make CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.s
+.PHONY : src/c9/WorkTest.cpp.s
+
 src/c9/testMain.o: src/c9/testMain.cpp.o
 
 .PHONY : src/c9/testMain.o
@@ -1629,6 +1710,15 @@ help:
 	@echo "... src/c9/Location.o"
 	@echo "... src/c9/Location.i"
 	@echo "... src/c9/Location.s"
+	@echo "... src/c9/TestTimer.o"
+	@echo "... src/c9/TestTimer.i"
+	@echo "... src/c9/TestTimer.s"
+	@echo "... src/c9/ThreadPoolTest.o"
+	@echo "... src/c9/ThreadPoolTest.i"
+	@echo "... src/c9/ThreadPoolTest.s"
+	@echo "... src/c9/WorkTest.o"
+	@echo "... src/c9/WorkTest.i"
+	@echo "... src/c9/WorkTest.s"
 	@echo "... src/c9/testMain.o"
 	@echo "... src/c9/testMain.i"
 	@echo "... src/c9/testMain.s"

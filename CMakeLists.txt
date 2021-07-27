@@ -133,5 +133,9 @@ add_executable(testThread
     src/c9/GeoServer.cpp
     src/c9/GeoServerTest.cpp
     src/c9/GeoServerTest2.cpp
+    src/c9/TestTimer.cpp
+
+    src/c9/WorkTest.cpp
+    src/c9/ThreadPoolTest.cpp
 )
 target_link_libraries(testThread pthread CppUTest)

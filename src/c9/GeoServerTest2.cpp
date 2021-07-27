@@ -3,6 +3,7 @@
 #include "GeoServer.h"
 #include "User.h"
 #include "VectorUtil.h"
+#include "TestTimer.h"
 
 TEST_GROUP(AGeoServer_UsersInBox)
 {
@@ -48,3 +49,18 @@ TEST(AGeoServer_UsersInBox, AnswersUsersInSpecificedRang)
     CHECK_EQUAL(std::vector<std::string>{cUser}, UserNames(users));
 }
 
+TEST(AGeoServer_UsersInBox, HandlesLargeNumberOfUsers)
+{
+    Location anotherLocation{aUserLocation.go(10, West)};
+    const unsigned int lots{50000};
+    for(unsigned int i{0}; i < lots; ++i){
+        std::string user{"user"+std::to_string(i)};
+        server.track(user);
+        server.updateLocation(user, anotherLocation);
+    }
+
+    TestTimer timer;
+
+    auto users = server.usersInBox(aUser, Width, Height);
+    CHECK_EQUAL(lots, users.size());
+}

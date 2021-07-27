@@ -180,6 +180,45 @@ CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/c9/GeoServerTest2.cpp -o CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.s
 
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: CMakeFiles/testThread.dir/flags.make
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o: ../src/c9/TestTimer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o -c /Users/e823551/Documents/TDDCPP/src/c9/TestTimer.cpp
+
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/e823551/Documents/TDDCPP/src/c9/TestTimer.cpp > CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.i
+
+CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/c9/TestTimer.cpp -o CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.s
+
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: CMakeFiles/testThread.dir/flags.make
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o: ../src/c9/WorkTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o -c /Users/e823551/Documents/TDDCPP/src/c9/WorkTest.cpp
+
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/e823551/Documents/TDDCPP/src/c9/WorkTest.cpp > CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.i
+
+CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/c9/WorkTest.cpp -o CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.s
+
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: CMakeFiles/testThread.dir/flags.make
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o: ../src/c9/ThreadPoolTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o -c /Users/e823551/Documents/TDDCPP/src/c9/ThreadPoolTest.cpp
+
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/e823551/Documents/TDDCPP/src/c9/ThreadPoolTest.cpp > CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.i
+
+CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/e823551/Documents/TDDCPP/src/c9/ThreadPoolTest.cpp -o CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.s
+
 # Object files for target testThread
 testThread_OBJECTS = \
 "CMakeFiles/testThread.dir/src/c9/testMain.cpp.o" \
@@ -189,7 +228,10 @@ testThread_OBJECTS = \
 "CMakeFiles/testThread.dir/src/c9/Location.cpp.o" \
 "CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o" \
 "CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o" \
-"CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o"
+"CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o" \
+"CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o" \
+"CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o" \
+"CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o"
 
 # External object files for target testThread
 testThread_EXTERNAL_OBJECTS =
@@ -202,9 +244,12 @@ testThread: CMakeFiles/testThread.dir/src/c9/Location.cpp.o
 testThread: CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o
 testThread: CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o
 testThread: CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o
+testThread: CMakeFiles/testThread.dir/src/c9/TestTimer.cpp.o
+testThread: CMakeFiles/testThread.dir/src/c9/WorkTest.cpp.o
+testThread: CMakeFiles/testThread.dir/src/c9/ThreadPoolTest.cpp.o
 testThread: CMakeFiles/testThread.dir/build.make
 testThread: CMakeFiles/testThread.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable testThread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/e823551/Documents/TDDCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable testThread"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testThread.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
