@@ -1,4 +1,5 @@
 #include "GeoServer.h"
+#include "Work.h"
 
 void GeoServer::track(const std::string& user)
 {
@@ -37,15 +38,23 @@ bool GeoServer::isDifferentUserInBounds(const std::pair<std::string, Location>&e
     return box.inBounds(each.second);
 }
 
-std::vector<User> GeoServer::usersInBox(const std::string& user, double widthInMeters, double heightInMeters) const
+void GeoServer::usersInBox(
+    const std::string& user, double widthInMeters, double heightInMeters,
+    GeoServerListener* listener) const
 {
     auto location = locations_.find(user)->second;
     Area box {location, widthInMeters, heightInMeters};
 
-    std::vector<User> users;
     for(auto& each : locations_){
-        if(isDifferentUserInBounds(each, user,  box))
-            users.emplace_back(User{each.first, each.second});
+        Work work{[&]{
+            if(isDifferentUserInBounds(each, user,  box))
+                listener->updated(User{each.first, each.second});
+        }};
+        pool_->add(work);
     }
-    return users;
+}
+
+void GeoServer::userThreadPool(std::shared_ptr<ThreadPool> pool)
+{
+    pool_ = pool;
 }

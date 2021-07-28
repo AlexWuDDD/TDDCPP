@@ -39,7 +39,9 @@ CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/Area.h
 CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/GeoServer.cpp
 CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/GeoServer.h
 CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/Location.h
+CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/ThreadPool.h
 CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/User.h
+CMakeFiles/testThread.dir/src/c9/GeoServer.cpp.o: ../src/c9/Work.h
 
 CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
@@ -58,7 +60,9 @@ CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/CppUTestExtensio
 CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/GeoServer.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/GeoServerTest.cpp
 CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/Location.h
+CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/ThreadPool.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/User.h
+CMakeFiles/testThread.dir/src/c9/GeoServerTest.cpp.o: ../src/c9/Work.h
 
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestConfig.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../cpputest-3.8/include/CppUTest/CppUTestGeneratedConfig.h
@@ -78,8 +82,10 @@ CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/GeoServer.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/GeoServerTest2.cpp
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/Location.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/TestTimer.h
+CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/ThreadPool.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/User.h
 CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/VectorUtil.h
+CMakeFiles/testThread.dir/src/c9/GeoServerTest2.cpp.o: ../src/c9/Work.h
 
 CMakeFiles/testThread.dir/src/c9/Location.cpp.o: ../src/c9/Location.cpp
 CMakeFiles/testThread.dir/src/c9/Location.cpp.o: ../src/c9/Location.h

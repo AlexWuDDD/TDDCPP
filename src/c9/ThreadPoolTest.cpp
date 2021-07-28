@@ -1,5 +1,7 @@
 #include "CppUTest/TestHarness.h"
 #include "ThreadPool.h"
+#include <vector>
+#include <set>
 
 TEST_GROUP(AThreadPool)
 {
@@ -90,16 +92,18 @@ TEST(AThreadPool, ExecutesAllWork)
         [&]{return count == NumberOfWorkItems;}));
 }
 
-TEST_GROUP(AThreadPool_AddRequest)
+class ThreadPoolThreadTests : public Utest
 {
-    std::mutex m;
+public:
     ThreadPool pool;
+    std::mutex m;
     std::condition_variable wasExecuted;
     unsigned int count{0};
-    
-    void setup() override
+    std::vector<std::shared_ptr<std::thread>> threads;
+
+    void teardown() override
     {
-        pool.start();
+        for(auto& t : threads) t->join();
     }
 
     void incrementCountAndNotify()
@@ -111,12 +115,20 @@ TEST_GROUP(AThreadPool_AddRequest)
 
     void waitForCountAndFailOnTimeout(
         unsigned int expectedCount,
-        const std::chrono::milliseconds& time = std::chrono::milliseconds(100)
+        const std::chrono::milliseconds& time = std::chrono::milliseconds(500)
     )
     {
         std::unique_lock<std::mutex> lock(m);
         CHECK_TRUE(wasExecuted.wait_for(lock, time,
             [&]{return count == expectedCount;}));
+    }
+};
+
+TEST_GROUP_BASE(AThreadPool_AddRequest, ThreadPoolThreadTests)
+{   
+    void setup() override
+    {
+        pool.start();
     }
 };
 
@@ -138,3 +150,51 @@ TEST(AThreadPool_AddRequest, ExecutesAllWork)
     waitForCountAndFailOnTimeout(NumOfWorkItems);
 }
 
+TEST(AThreadPool_AddRequest, HoldsUpUnderClientStress)
+{
+    Work work{[&]{incrementCountAndNotify();}};
+    unsigned int NumOfWorkItems{10};
+    unsigned int NumOfThreads{10};
+    for(unsigned int i{0}; i < NumOfThreads; ++i){
+        threads.push_back(std::make_shared<std::thread>(
+            [&]{
+                for(unsigned int j{0}; j < NumOfWorkItems; ++j){
+                    pool.add(work);
+                }
+            }
+        ));
+    }
+    waitForCountAndFailOnTimeout(NumOfThreads * NumOfWorkItems);
+}
+
+
+TEST_GROUP_BASE(AThreadPoolWithMultipleThreads, ThreadPoolThreadTests)
+{
+    std::set<std::thread::id> threads;
+    void addThreadIfUnique(const std::thread::id& id){
+        std::unique_lock<std::mutex> lock(m);
+        threads.insert(id);
+    }
+
+    size_t numberOfThreadsProcessed()
+    {
+        return threads.size();
+    }
+};
+
+TEST(AThreadPoolWithMultipleThreads, DispatchesWorkToMultipleThreads)
+{
+    unsigned int numberOfThreads{2};
+    pool.start(numberOfThreads);
+    Work work{[&]{
+        addThreadIfUnique(std::this_thread::get_id());
+        incrementCountAndNotify();
+    }};
+    unsigned int NumOfWorkItems{500};
+    for(unsigned int i{0}; i < NumOfWorkItems; ++i){
+        pool.add(work);
+    }
+
+    waitForCountAndFailOnTimeout(NumOfWorkItems);
+    LONGS_EQUAL(numberOfThreads, numberOfThreadsProcessed());
+}
