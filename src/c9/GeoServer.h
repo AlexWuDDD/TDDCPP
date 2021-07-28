@@ -31,7 +31,7 @@ public:
         const std::string& user, double widthInMeters, double heightInMeters,
         GeoServerListener* listener=nullptr) const;
     
-    void userThreadPool(std::shared_ptr<ThreadPool> pool);
+    void useThreadPool(std::shared_ptr<ThreadPool> pool);
 
 private:
     std::unordered_map<std::string, Location> locations_;

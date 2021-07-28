@@ -54,7 +54,7 @@ void GeoServer::usersInBox(
     }
 }
 
-void GeoServer::userThreadPool(std::shared_ptr<ThreadPool> pool)
+void GeoServer::useThreadPool(std::shared_ptr<ThreadPool> pool)
 {
     pool_ = pool;
 }

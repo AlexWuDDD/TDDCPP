@@ -25,7 +25,7 @@ public:
 
     virtual void setup() override
     {
-        server.userThreadPool(pool);
+        server.useThreadPool(pool);
         
         server.track(aUser);
         server.track(bUser);
